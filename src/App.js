@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Homepage from './components/Home/homepage';
+import Ticket from './components/Ticket Replacer/ticketreplacer';
+import Navbar from './components/navbar';
 
-function App() {
+class App extends Component {
+  render(){
   return (
+    <div>
+    <Navbar />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Welcome to the E-Ticketing System</h3>
+      <p>Please enter your name and age below for the ticket recognizer</p>
+      <Homepage />
+      <Ticket />
+    </div>
     </div>
   );
+  };
 }
 
 export default App;
