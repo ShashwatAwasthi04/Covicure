@@ -3,3 +3,9 @@ input{
     align-items: center;
     margin: 2px 2px 2px 2px;
 }
+.ticketshow{
+    background-color: bisque;
+}
+img{
+    height: 200px;
+}
